@@ -22,10 +22,60 @@ header {
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+  position: relative;
 }
 
 header h1 {
   margin-bottom: 10px;
+}
+
+#admin-status {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  text-align: right;
+}
+
+#admin-login-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#admin-login-form input {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  color: #333;
+}
+
+#admin-login-form button,
+#admin-logout,
+#admin-toggle {
+  padding: 5px 10px;
+  background-color: #283593;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#admin-login-form button:hover,
+#admin-logout:hover,
+#admin-toggle:hover {
+  background-color: #1a237e;
+}
+
+#admin-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none !important;
 }
 
 main {
